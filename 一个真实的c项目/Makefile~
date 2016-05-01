@@ -1,0 +1,5 @@
+main:
+	gcc *.c 
+clean:
+	rm *.o
+	rm a.out
