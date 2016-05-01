@@ -1,0 +1,16 @@
+#include "include/calculator.h"
+extern int n;
+extern int p[10];
+
+
+void qsort(int l[],int low,int high)
+{
+	int prvotloc;
+	if(low<high)
+	{
+		prvotloc=partions(l,low,high);    
+		qsort(l,low,prvotloc-1); 
+		qsort(l,prvotloc+1,high); 
+		
+	}
+}
